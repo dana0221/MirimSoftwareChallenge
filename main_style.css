@@ -1,0 +1,215 @@
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+@media (min-width:768px) {
+	
+}
+
+@font-face{
+	font-family:"MARU";
+	src:url('./font/MARUBURI-REGULAR.ttf') format('truetype');
+}
+
+a{
+	color:white;
+	display:block;
+	text-decoration:none;
+}
+
+body, html{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position:absolute;
+}
+
+#header{
+	width:100%;
+	height:100px;
+	margin-bottom:20px;
+	position: fixed;
+	z-index:2;
+}
+	
+	#logo{
+		width:227px;
+		height:44px;
+		float:left;
+		margin-top:20px;
+		margin-left:15px;
+	}
+		#logo a img{
+			width:227px;
+			height:44px;
+			float:left;
+			margin-top:20px;
+			margin-left:38px;
+			object-fit:cover;
+		}
+
+	#plus{
+		width:34px;
+		height:34px;
+		margin-top:48px;
+		margin-right:58px;
+	}
+		#plus img{
+			width:34px;
+			height:34px;
+		}
+
+	
+#main{
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:1;
+}
+	.change_page{
+		width:1200px;
+		height:100%;
+		top:100px;
+		margin-left:18%;
+		position:absolute;
+		z-index:10;
+	}
+		.text{
+			margin-top:200px;
+			margin-left:600px;
+			color:white;
+			font-family:MARU;
+			font-size:40px;
+			font-weight:normal;
+			text-align:left;
+			line-height:60px;
+			position:absolute;
+			z-index:10;
+		}
+
+		.time{
+			float:left;
+			margin-top:400px;
+			margin-left:608px;
+			color:white;
+			font-family:MARU;
+			font-size:19px;
+			letter-spacing:1px;
+		}
+
+		.time_date{
+			float:left;
+			margin-top:400px;
+			color:white;
+			font-family:MARU;
+			font-size:19px;
+			letter-spacing:1px;
+		}
+
+		#line{
+			width:150px;
+			height:1px;
+			float:left;
+			margin-top:410px;
+			margin-left:5px;
+			margin-right:5px;
+			background-color:white;
+		}
+
+		
+		.down{
+			width:100px;
+			height:70px;
+			margin-top:500px;
+			margin-left:450px;
+			border:none;
+			border-radius:20px;
+			position:relative;
+			background-color:transparent;
+		}
+		
+		.btn1{
+			margin-top:60px;
+		}
+		
+		.up{
+			width:100px;
+			height:70px;
+			margin-top:-70px;
+			margin-left:450px;
+			border:none;
+			border-radius:20px;
+			position:relative;
+			background-color:transparent;
+		}
+
+	.slide_page{
+		width:100%;
+		height:100%;
+		position:relative;
+	}
+		.slide_page img{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+			position:relative;
+		}
+
+		#diary{
+			float:left;
+			margin-top:170px;
+			margin-left:800px;
+			color:white;
+			font-family:MARU;
+			font-size:21px;
+			text-align:center;
+			line-height:240px;
+			letter-spacing:1px;
+		}
+		
+		#parenthesis{
+			width:10px;
+			height:20px;
+			float:left;
+			margin-top:280px;
+			margin-left:20px;
+		}
+
+	#point{
+		margin:0;
+		padding:0;
+		list-style:none
+	}
+	
+	.quick {
+		position:fixed;
+		top:50%;
+		left:25px;
+		transform:translateY(-50%);
+		z-index:100000
+	}
+
+	.quick li {
+		width:12px;
+		height:12px;
+		margin-bottom:12px;
+		border-radius:15px;
+		border:2px solid #fff;
+		cursor:pointer;
+	}
+
+	.quick .on {
+		background:#fff;
+	}
+
+	#footer{
+		width:100%;
+		height:25%;
+		bottom:0;
+		position:absolute;
+		background-color:rgba(0, 0, 0, 0.5);
+		z-index:1;
+	}

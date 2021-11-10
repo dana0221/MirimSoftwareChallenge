@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="./main_style.css">
+  <link rel="stylesheet" href="./diary_style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="./main_js.js"></script>
+  <script src="./diary_js.js"></script>
+  <title>다이어리</title>
+ </head>
+ <body>
+	<img src="./img/slideimg_01.png" id="bg">
+	
+	<div id="header">
+		<div id="logo">
+			<a href="./main_page.html">
+				<img src="./img/mainlogo.png">
+			</a>
+		</div>
+	</div>
+	
+	<div id="body">
+		<div id="file_list">
+			<div id="this_file">
+				<img src="img/img.png" id="img">
+				<a href="./edit_diary_page.html">
+					<p id="diary_title">다이어리 제목</p>
+				</a>
+				<p id="page_cnt">페이지 수 </p>
+			</div>
+			
+			<form id="btns">
+				<input type="button" name="new" id="new" value="+ 새로 작성하기">
+				<div id="search_div">
+					<img src="./img/search.png" id="s_img">
+					<input type="text" name="search" id="search" placeholder=" 검색">
+				</div>
+			</form>
+
+			<div id="files">
+				<div id="file">
+					<img src="img/file.png">
+					<p id="file_title">제목</p>
+					<p id="file_data">2021년 9월 29일 수요일</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="main">
+			<form>
+				<p id="datatime"></p>
+
+				<div id="btn_menu">
+					<p id="data">2021년 9월 29일 수요일 2:24</p>
+					<input type="button" name="image" id="image" value="사진 업로드">
+					<input type="submit" name="save" class="btn save" value="완료">
+					<input type="button" name="back" class="btn back" value="취소">
+				</div>
+				<div id="contents">
+					<div id="title">
+						<input type="text" name="title" placeholder="제목">
+					</div>
+					<div id="write">
+						<p>작성자 : </p>
+						<input type="text" id="writer" name="name" placeholder="이름">
+						<textarea name="write" wrap=hard placeholder="내용을 작성하세요."></textarea>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+ </body>
+</html>
